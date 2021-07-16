@@ -1,4 +1,6 @@
 ﻿using System;
+using TestSpace;
+using Inheritance;
 
 namespace LearningCSharp
 {
@@ -6,7 +8,8 @@ namespace LearningCSharp
     {
         static void Main(string[] args)
         {
-            Console.WriteLine(Methods.overloadPlus(5.2D, 10.2D));
+            Child c = new Child(40, "Parent", 21, "Guy");
+            c.displayChildAndParent();
         }
     }
 }
